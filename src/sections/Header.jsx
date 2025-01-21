@@ -40,7 +40,7 @@ const Header = () => {
         )}>
             <div className="container flex h-14 items-center max-lg:px-5">
                 <a className="lg:hidden flex-1 cursor-pointer z-2">
-                    <img src="images/xora.svg" alt="Xora-Logo" width={115} height={55} />
+                    <img src="./images/xora.svg" alt="Xora-Logo" width={115} height={55} />
                 </a>
 
                 <div className={
@@ -58,7 +58,7 @@ const Header = () => {
 
                                 <li className='nav-logo'>
                                     <LinkScroll to='hero' offset={-250} spy smooth className={clsx('max-lg:hidden transition-transform duration-500 cursor-pointer')}>
-                                        <img src="images/xora.svg" alt="Xora-Logo" width={160} height={55} />
+                                        <img src="./images/xora.svg" alt="Xora-Logo" width={160} height={55} />
                                     </LinkScroll>
                                 </li>
 
@@ -70,15 +70,15 @@ const Header = () => {
                             </ul>
                         </nav>
                         <div className="lg:hidden block absolute top-1/2 left-0 w-[960px] h-[380px] translate-x-[-280px] -translate-y-1/2 rotate-90">
-                            <img src="images/bg-outlines.svg" width={960} height={380} alt="outline" className='relative z-2' />
-                            <img src="images/bg-outlines-fill.png" width={960} height={380} alt="outline" className='absolute inset-0 mix-blend-soft-light opacity-5' />
+                            <img src="./images/bg-outlines.svg" width={960} height={380} alt="outline" className='relative z-2' />
+                            <img src="./images/bg-outlines-fill.png" width={960} height={380} alt="outline" className='absolute inset-0 mix-blend-soft-light opacity-5' />
                         </div>
                     </div>
                 </div>
                 <button
                     onClick={() => setIsOpen((prevState) => !prevState)}
                     className="lg:hidden z-2 size-10 border-2 border-s4/25 rounded-full flex justify-center items-center">
-                    <img className='size-1/2 object-contain' src={`images/${isOpen ? "close" : "magic"}.svg`} alt="menu" />
+                    <img className='size-1/2 object-contain' src={`./images/${isOpen ? "close" : "magic"}.svg`} alt="menu" />
                 </button>
             </div>
         </header>
